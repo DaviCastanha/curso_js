@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificador de brasileirisse.</h1>
+    Seu país: <input type="text" name="nation" id="nation" onkeypress="if (event.key === 'Enter') calcular()">
+    <input type="button" value="verificar" onclick="calcular()">
+    <p></p>
+    <div class="res">A máscara vai cair, ladrão.</div>
+
+    <script>
+        function calcular(){
+            var pais = document.querySelector('input#nation').value
+            var res = document.querySelector('div.res')
+    
+            if(pais === 'Brasil'){
+                res.innerHTML = `<p>Tamo juuuunto cachooorro.<p>`
+            } else {
+                res.innerHTML = `<p>SAI GRINGOW<p>`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

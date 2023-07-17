@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Super contador</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+
+        <div>
+            Começando em: <input type="number" name="nstart" id="nstart">
+        </div>
+
+        <div>
+            Terminando em: <input type="number" name="nend" id="nend">
+        </div>
+
+        <div>
+            Pulando de: <input type="number" name="nstep" id="nstep">
+        </div>
+
+        <button onclick="conta()">Contar!</button>
+
+        <div id="res">
+            Preparando sua contagem...
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; DevYokis</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
